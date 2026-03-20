@@ -18,6 +18,17 @@
   <!-- Manifest -->
   <link rel="manifest" href="manifest.webmanifest" />
 
+  <!-- Notifications Push -->
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function (OneSignal) {
+      await OneSignal.init({
+        appId: "09e760e8-1c4a-4de6-8110-646d0b7aa700",
+      });
+    });
+  </script>
+
   <!-- Javascript principal -->
   <!-- ...à quoi sert le defer ? :) -->
   <script src="index.js" type="module" defer></script>

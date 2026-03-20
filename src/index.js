@@ -38,4 +38,4 @@ window.addEventListener('hashchange', router)
 
 router()
 
-navigator.serviceWorker.register('/service-worker.js')
+navigator.serviceWorker.register('/OneSignalSDKWorker.js')
